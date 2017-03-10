@@ -88,40 +88,60 @@
 		<script src="../js/mobiscroll.min.zh.js"></script>
 		<script src="flight/js/flight.js"></script>
 		<script>
+			function setSingleFrom(text) {
+				alert(1);
+				appcan.locStorage.setVal("fromcity", "false");
+				setFromCity(text);
+			}
+
+			function setSingleTO(text) {
+				appcan.locStorage.setVal("tocity", "false");
+				setToCity(text);
+			}
+
 			appcan.ready(function() {
-			if(appcan.locStorage.getVal("flightFromCity")) {
-				$("#from_city").html(appcan.locStorage.getVal("flightFromCity"));
-			} else {
-				$("#from_city").html("广州");
-				appcan.locStorage.setVal("flightFromCity", "广州");
-				appcan.locStorage.setVal("flightFromCityNode", "CAN");
+				if(appcan.locStorage.getVal("flightFromCity")) {
+					$("#from_city").html(appcan.locStorage.getVal("flightFromCity"));
+				} else {
+					$("#from_city").html("广州");
+					appcan.locStorage.setVal("flightFromCity", "广州");
+					appcan.locStorage.setVal("flightFromCityNode", "CAN");
+				}
+				if(appcan.locStorage.getVal("flightToCity")) {
+					$("#to_city").html(appcan.locStorage.getVal("flightToCity"));
+				} else {
+					$("#to_city").html("北京");
+					appcan.locStorage.setVal("flightToCity", "北京");
+					appcan.locStorage.setVal("flightToCityNode", "PEK");
+				}
+
+				appcan.button('#openFromCity', "ani-act", function() {
+					appcan.locStorage.setVal('fromcity', 'true');
+					appcan.window.open("flight_city", 'flight_city_content1.html', 2);
+				})
+				appcan.button('#openToCity', "ani-act", function() {
+					appcan.locStorage.setVal("tocity", "true");
+					appcan.window.open("flight_city", 'flight_city_content1.html', 2);
+				})
+
+				appcan.button("#Footer", "ani-act", searchPlane);
+			});
+
+			function setFromCity(cityName) {
+				var city = cityName.split(",")[0];
+				var cityNode = cityName.split(",")[1];
+				$("#from_city").text(city);
+				appcan.locStorage.setVal("flightFromCity", city);
+				appcan.locStorage.setVal("flightFromCityNode", cityNode);
+			};
+
+			function setToCity(cityName) {
+				var city = cityName.split(",")[0];
+				var cityNode = cityName.split(",")[1];
+				$("#to_city").text(city);
+				appcan.locStorage.setVal("flightToCity", city)
+				appcan.locStorage.setVal("flightToCityNode", cityNode)
 			}
-			if(appcan.locStorage.getVal("flightToCity")) {
-				$("#to_city").html(appcan.locStorage.getVal("flightToCity"));
-			} else {
-				$("#to_city").html("北京");
-				appcan.locStorage.setVal("flightToCity", "北京");
-				appcan.locStorage.setVal("flightToCityNode", "PEK");
-			}
-
-			appcan.window.subscribe('singlefrom', function(msg) {
-				setFromCity(msg)
-			});
-			appcan.window.subscribe('singleTo', function(msg) {
-				setToCity(msg)
-			});
-
-			$('#openFromCity').click(function() {
-				appcan.locStorage.setVal('fromcity', 'true');
-				appcan.window.open("flight_city", 'flight_city.html', 2);
-			})
-			$('#openToCity').click(function() {
-				appcan.locStorage.setVal("tocity", "true");
-				appcan.window.open("flight_city", 'flight_city.html', 2);
-			})
-
-			appcan.button("#submitBtn", "btn-act", searchPlane);
-			});
 
 			var myDate = new Date();
 			$("#startDate .con .date").text(NYR(myDate, 2));

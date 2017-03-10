@@ -487,6 +487,7 @@ ul, li {
     top: 0;
     z-index: 1000;
     height: 3em;
+    color: #fff;
 }
 
 [data-control="HEADERBOX"] {

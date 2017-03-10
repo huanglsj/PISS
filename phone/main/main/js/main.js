@@ -55,12 +55,6 @@
 			}, {
 				"inPageName": "flight",
 				"inUrl": "../flight/flight.html",
-			}, {
-				"inPageName": "flight",
-				"inUrl": "../flight/flight.html",
-			}, {
-				"inPageName": "flight",
-				"inUrl": "../flight/flight.html",
 			}],
 			top: 0,
 			left: 0,
