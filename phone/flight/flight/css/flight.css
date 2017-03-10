@@ -1,0 +1,216 @@
+#Header {
+	color:rgba(255,255,255,1);	
+}
+#Footer{
+	color: #fff;
+}
+#ScrollContent {
+	padding:2.69em 0em 0em 0em;
+}
+.uinn-at4{
+    padding: 2.69em 0.5em 0em !important;
+}
+.uinn-4a {
+    padding-top: 2.69em !important;
+}
+.uinn-a4{
+    padding:2.69em .5em 0 !important;
+}
+
+.new-head{
+	height: 1.5rem;
+	font-size: 0.6rem;
+}
+.new-pt3{
+	padding-top: 1.5rem;
+}
+
+.plane-ticket-con .list{
+    background-color: #fff;
+    padding: 0 0.48rem;
+    margin-bottom: 0.38rem;
+    font-size: 0.5rem;
+    color:#546581; 
+    border-bottom: 1px solid #eae9ee;
+    border-top: 1px solid #eae9ee;
+}
+.plane-ticket-con .list:last-child{
+    margin-bottom: 0
+}
+.first-head .mbsc-control-ev{
+    height:100%;
+    width: 100%;
+    border: 0;
+    -webkit-box-flex: 1;
+    box-flex: 1;
+    display: -webkit-box !important;
+    display: box !important;
+    position: relative;
+    background-color:#fff;
+    padding: 0.6rem 0;
+    font-size: 0.8rem;
+    color:#9098a3; 
+}
+.first-head .my-select{
+    display: none;
+    border: 0;
+    opacity: 0;
+}
+.first-head .select-ul{
+    font-size: 0.8rem;
+    color:#9098a3; 
+}
+.mbsc-sc-itm .s-date{
+    font-size: 0.6em;
+}
+#selectUl_dummy{
+    height:100%;
+    width: 100%;
+    border: 0;
+    -webkit-box-flex: 1;
+    box-flex: 1;
+    display: -webkit-box !important;
+    display: box !important;
+    position: relative;
+    background-color:#fff;
+    padding: 0.6rem 0;
+    font-size: 0.8rem;
+    color:#9098a3; 
+    min-height: 1em;
+}
+.plane-ticket-con .first-head .fa-angle-right{
+    font-size: 0.8rem;
+    color:#9098a3; 
+}
+.plane-ticket-con .two-list{
+    padding: 0.5rem 0.48rem;
+    font-size: 0.55rem;
+}
+.plane-ticket-con .three-list{
+    padding-bottom: 0.8rem;
+}
+.three-list .tr:first-child{
+    padding-top: 0.6rem;
+}
+.first-head > .ub-ac{
+    min-height: 2.25rem;
+    font-size: 0.8rem;
+}
+.three-list .tr .icon{
+    background: url("../img/plane.png") no-repeat;
+    width: 1.46rem;
+    height: 1.46rem;
+    background-size: 100%;
+}
+.three-list .tr .con{
+    font-size: 0.7rem;
+    font-weight: bold;
+    margin-top: 0.3rem;
+    min-height: 0.94rem;
+}
+.three-list .tr .address{
+    padding-bottom: 0.4rem;
+    border-bottom: 1px solid #eae9ee;
+    width: 100%;
+}
+.three-list .tr:nth-of-type(2){
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #eae9ee;
+}
+.three-list .tr .week{
+    font-size: 0.5rem;
+}
+.three-list .tr:nth-of-type(3){
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #eae9ee;
+}
+.plane-ticket-con .list .switch{
+    font-size: 0.5rem;
+    background-color: #DFDFDF;
+    border-color: #ddd;
+}
+.plane-ticket-con .list .sc-bg-active{
+    background-color: #fff;
+}
+.plane-ticket-con .list .bc-head{
+    background-color: #6cbdf5;
+}
+.plane-ticket-con .three-list .start-date{
+   width: 50%;
+}
+.plane-ticket-con .three-list .end-date{
+   display: none;
+   width: 50%;
+}
+.three-list .shipping{
+    margin-top: 0.5rem;
+}
+.three-list .shipping li{
+    width: 25%;
+    border-bottom: 1px solid #526283;
+    border-top: 1px solid #526283;
+    border-left: 1px solid #526283;
+    text-align: center;
+    padding: 0.3rem 0;
+    color: #546380;
+}
+.three-list .shipping li:first-child{
+    border-top-left-radius: 0.3rem;
+    border-bottom-left-radius: 0.3rem;
+}
+.three-list .shipping li:last-child{
+    border-right: 1px solid #526283;
+    border-top-right-radius: 0.3rem;
+    border-bottom-right-radius: 0.3rem;
+}
+.three-list .shipping li.active{
+    background-color: #6CBDF5;
+    color: #fff;
+}
+.plane-list-header{
+    color: #fff;
+    padding: 0.5em 0;
+}
+.plane-list-header .head-icon{
+    background-image: url("../img/head_plane.png");
+    width: 5em;
+    height: 1em;
+}
+.plane-list-header .title{
+    padding: 0.3em 0;
+}
+.plane-book-head .title{
+    min-height: 3em;
+}
+.plane-list-header .cur-day{
+    font-size: 0.8em;
+    color: #A6B2CC;
+}
+.plane-date-list{
+    background-color: #5890FF;
+    color: #fff;
+    font-size: 0.7em;
+}
+.plane-date-list .plane-date-ul{
+    width: 87.5%;
+}
+.plane-date-list .plane-date-ul li{
+    text-align: center;
+    width: 14.28571428571429%;
+    padding: 0.5em 0;
+}
+.plane-date-list .plane-date-ul li > div:nth-of-type(2){
+    padding: 0.2em 0;
+}
+.plane-date-list .plane-date-ul li.active{
+    background-color: #6FA0FF;
+}
+.plane-date-list .calendar{
+    width: 12.5%;
+    text-align: center;
+}
+.plane-date-list .calendar .icon{
+    background-image: url("../img/calendar.png");
+    width: 2.5em;
+    height: 2.5em;
+}

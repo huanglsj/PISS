@@ -1,0 +1,37 @@
+#ContentFlexVer{
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 3.1em;
+}
+#ScrollContent {
+	padding:2.69em 0em 2.69em 0em;
+}
+#Footer {
+	border-color:rgba(202,202,202,1);
+}
+#Box_footer{
+    color:#FFFFFF;
+}
+.appcanBtn{
+    background-image:url('myImg/appcanBtn.png');
+}
+.umar-l-ele{
+    margin-left:0.8em;
+}
+.uwh-abn{
+    width:3.5625em;
+    height:1.75em;
+}
+.uinn-4b{
+	padding-bottom: 2.69em !important;
+}
+.uinn-at4{
+    padding: 2.69em 0.5em 0em !important;
+}
+.uinn-4a {
+    padding-top: 2.69em !important;
+}
+.uinn-a4{
+    padding:2.69em .5em 0 !important;
+}
