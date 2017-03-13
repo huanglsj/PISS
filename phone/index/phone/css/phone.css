@@ -1,0 +1,19 @@
+.phone-table{
+	border: 0;
+	border-collapse: 0;
+	border-spacing: 0;
+}
+.phone-table th{
+	text-align: left;
+	height: 2em;
+	border-bottom: 2px solid #21b591;
+}
+.phone-table th:nth-of-type(1){
+	width: 55%;
+}
+.phone-table tr{
+	height: 3em;
+}
+.phone-table td{
+	font-size: 0.8em;
+}

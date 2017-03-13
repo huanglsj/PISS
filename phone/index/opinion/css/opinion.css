@@ -1,0 +1,45 @@
+@font-face {font-family: "iconfont";
+  src: url('../fonts/iconfont.eot?t=1489386815764'); /* IE9*/
+  src: url('../fonts/iconfont.eot?t=1489386815764#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('../fonts/iconfont.woff?t=1489386815764') format('woff'), /* chrome, firefox */
+  url('../fonts/iconfont.ttf?t=1489386815764') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  url('../fonts/iconfont.svg?t=1489386815764#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont {
+  font-family:"iconfont" !important;
+  font-size:16px;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-feichangbumanyi:before { content: "\e622"; }
+
+.icon-feichangmanyi:before { content: "\e6c0"; }
+
+.icon-yiban:before { content: "\e607"; }
+
+.icon-feichanghao:before { content: "\e63e"; }
+
+.opinion-body{
+	background-color: #fff !important;
+}
+.opinion-face li{
+	width: 25%;
+	text-align: center;
+	padding: 0.5em 0;
+}
+.opinion-face li div{
+	background-color: #ddd;
+	margin: 0 0.5em;
+	padding: 1em 0;
+	border-radius: 0.3em;
+}
+.opinion-face li i{
+	font-size: 2em;
+}
+.opinion-form textarea{
+	resize: none;
+	padding: 1em;
+}

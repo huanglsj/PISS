@@ -1,0 +1,57 @@
+@font-face {font-family: "iconfont";
+  src: url('../fonts/iconfont.eot?t=1489375916122'); /* IE9*/
+  src: url('../fonts/iconfont.eot?t=1489375916122#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('../fonts/iconfont.woff?t=1489375916122') format('woff'), /* chrome, firefox */
+  url('../fonts/iconfont.ttf?t=1489375916122') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  url('../fonts/iconfont.svg?t=1489375916122#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont {
+  font-family:"iconfont" !important;
+  font-size:16px;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-shijian:before { content: "\e659"; }
+
+.icon-xinglif:before { content: "\e636"; }
+
+.icon-m-customs:before { content: "\e6a0"; }
+
+.icon-anquan:before { content: "\e609"; }
+
+.icon-iconfontshangchuan062:before { content: "\e606"; }
+
+.icon-jianyishenbao:before { content: "\e601"; }
+
+.notice li{
+	padding: 1em 0.8em;
+	background-color: #fff;
+	border-bottom: 1px dashed #ddd;
+}
+.notice li .iconfont{
+	font-size: 2em;
+}
+.notice li:nth-of-type(1) .iconfont{
+	color: #3D6498;
+}
+.notice li:nth-of-type(2) .iconfont{
+	color: #FAA641;
+}
+.notice li:nth-of-type(3) .iconfont{
+	color: #37B969;
+}
+.notice li:nth-of-type(4) .iconfont{
+	color: #3D6498;
+}
+.notice li:nth-of-type(5) .iconfont{
+	color: #FAA641;
+}
+.notice li:nth-of-type(6) .iconfont{
+	color: #37B969;
+}
+.prompt{
+	padding: 1em 0;
+}

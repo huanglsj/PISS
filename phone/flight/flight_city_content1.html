@@ -220,11 +220,13 @@
 					appcan.locStorage.setVal(cityArr["type"] + "historyCity", historyCity);
 				}
 				if(appcan.locStorage.getVal("fromcity") == "true") {
-					appcan.frame.evaluateScript({
-						name: 'main',
-						popName:'ContentFlexVer_flight',
-						scriptContent: 'setSingleFrom("' + city + "," + cityNode + '")'
-					});
+					var fromList = city+","+cityNode;
+					appcan.window.publish('flightSinglefrom', fromList);
+//					appcan.frame.evaluateScript({
+//						name: 'main',
+//						popName:'ContentFlexVer_flight',
+//						scriptContent: 'setSingleFrom("' + city + "," + cityNode + '")'
+//					});
 					appcan.window.evaluateScript({
 						name: 'apply',
 						scriptContent: 'setSingleFrom("' + city + ',' + cityNode + '")'
@@ -238,11 +240,13 @@
 						scriptContent: 'appcan.window.close(-1)'
 					});
 				} else if(appcan.locStorage.getVal("tocity") == "true") {
-					appcan.frame.evaluateScript({
-						name: 'main',
-						popName:'ContentFlexVer_flight',
-						scriptContent: 'setSingleTO("' + city + "," + cityNode + '")'
-					});
+					var toList = city+","+cityNode;
+					appcan.window.publish('flightSingleto', toList);
+//					appcan.frame.evaluateScript({
+//						name: 'main',
+//						popName:'ContentFlexVer_flight',
+//						scriptContent: 'setSingleTO("' + city + "," + cityNode + '")'
+//					});
 					appcan.window.evaluateScript({
 						name: 'apply',
 						scriptContent: 'setSingleTO("' + city + ',' + cityNode + '")'

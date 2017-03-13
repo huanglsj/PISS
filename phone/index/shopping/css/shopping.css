@@ -1,0 +1,46 @@
+.prompt{
+	padding: 1em 0;
+	text-align: center;
+}
+.banner img{
+	width: 100%;
+}
+.shipping .s-head{
+	border-bottom: 1px solid #ddd;
+}
+.shipping .s-head li{
+	width: 20%;
+	font-size: 0.8em;
+	text-align: center;
+	border-right: 1px solid #ddd;
+	padding: 1em 0;
+}
+.shipping .s-head li.active{
+	color: #00A1EA;
+}
+.shipping .s-head li:last-child{
+	border-right: 0;
+}
+.shipping .s-head li i{
+	font-size: 1.4em;
+}
+.shipping .s-con-list{
+	display: none !important;
+}
+.shipping .s-con-list.active{
+	display: block !important;
+}
+.store-ul li{
+	float: left;
+	width: 50%;
+	text-align: center;
+	font-size: 0.8em;
+}
+.store-ul li > div{
+	margin: 0.5em 0.4em;
+	border: 1px solid #ddd;
+	padding: 0.3em;
+}
+.store-ul li img{
+	width: 100%;
+}

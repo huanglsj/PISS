@@ -44,6 +44,9 @@
 		});
 
 		tabview.on("click", function(obj, index) { /*TAB变更时切换多浮动窗口*/
+			if(index==1){
+				appcan.locStorage.setVal("flightHeadClose", "false");
+			}
 			appcan.window.selectMultiPopover("ContentFlexVer", index);
 		});
 
@@ -55,6 +58,12 @@
 			}, {
 				"inPageName": "flight",
 				"inUrl": "../flight/flight.html",
+			}, {
+				"inPageName": "service",
+				"inUrl": "../index/service.html",
+			}, {
+				"inPageName": "me",
+				"inUrl": "../me/me.html",
 			}],
 			top: 0,
 			left: 0,

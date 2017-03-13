@@ -21,9 +21,10 @@
 			<div class="uh bc-head new-head" data-control="HEADER" id="Header">
 				<div class="ub ub-ac new-head">
 					<div class="nav-btn" id="nav-left">
-						<div class="fa fa-1g ub-img1"></div>
+						<div class="ub-img1 icon-left ulev2">
+						</div>
 					</div>
-					<h1 class="ut ub-f1 ulev-3 ut-s tx-c" tabindex="0">航班查询</h1>
+					<h1 class="ut ub-f1 ulev-3 ut-s tx-c p0" tabindex="0">航班查询</h1>
 					<div class="nav-btn" id="nav-right">
 						<div class="fa  fa-1g  ub-img1"></div>
 					</div>
@@ -88,18 +89,23 @@
 		<script src="../js/mobiscroll.min.zh.js"></script>
 		<script src="flight/js/flight.js"></script>
 		<script>
-			function setSingleFrom(text) {
-				alert(1);
-				appcan.locStorage.setVal("fromcity", "false");
-				setFromCity(text);
-			}
+//			function setSingleFrom(text) {
+//				appcan.locStorage.setVal("fromcity", "false");
+//				setFromCity(text);
+//			}
 
-			function setSingleTO(text) {
-				appcan.locStorage.setVal("tocity", "false");
-				setToCity(text);
-			}
+//			function setSingleTO(text) {
+//				appcan.locStorage.setVal("tocity", "false");
+//				setToCity(text);
+//			}
 
 			appcan.ready(function() {
+				if(appcan.locStorage.getVal("flightHeadClose")=="true"){
+					$("#nav-left .icon-left").show();
+				}else{
+					$("#nav-left .icon-left").hide();
+				}
+				
 				if(appcan.locStorage.getVal("flightFromCity")) {
 					$("#from_city").html(appcan.locStorage.getVal("flightFromCity"));
 				} else {
@@ -114,6 +120,16 @@
 					appcan.locStorage.setVal("flightToCity", "北京");
 					appcan.locStorage.setVal("flightToCityNode", "PEK");
 				}
+
+				appcan.window.subscribe('flightSinglefrom', function(msg) {
+					appcan.locStorage.setVal("fromcity", "false");
+					setFromCity(msg)
+				});
+				
+				appcan.window.subscribe('flightSingleto', function(msg) {
+					appcan.locStorage.setVal("tocity", "false");
+					setToCity(msg)
+				});
 
 				appcan.button('#openFromCity', "ani-act", function() {
 					appcan.locStorage.setVal('fromcity', 'true');
@@ -213,18 +229,20 @@
 				appcan.locStorage.setVal("flightFromCityNode", to.node);
 				appcan.locStorage.setVal("flightToCity", from.city);
 				appcan.locStorage.setVal("flightToCityNode", from.node);
-			})
+			});
+
+			function closeMobiscroll() {
+				startDateMobiscroll.mobiscroll('hide');
+				//				endDateMobiscroll.mobiscroll('hide');
+				//				selectMobiscroll.mobiscroll('hide');
+			}
 
 			//查询机票
 			function searchPlane() {
-				appcan.locStorage.setVal("begin", mySelect.begin);
-				appcan.locStorage.setVal("end", mySelect.end);
 				appcan.locStorage.setVal("airDate", $("#startDateHidden").val());
 				appcan.locStorage.setVal("flightSiteType", getShipping());
 				appcan.locStorage.setVal("openFlightSearchResult", "true");
-				appcan.locStorage.setVal("itineraryId", mySelect.id);
-				appcan.locStorage.setVal("expId", mySelect.id);
-				appcan.window.open("plane_ticket_searchresult", "plane_ticket_searchresult.html", 2);
+				appcan.window.open("flight_list", "flight_list.html", 2);
 				closeMobiscroll();
 			}
 		</script>

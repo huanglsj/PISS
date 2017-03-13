@@ -202,3 +202,40 @@ select:focus {
 .he3{
 	height: 3em;
 }
+.head-he-auto{
+	height: auto !important;
+}
+.bgset{
+    font-size: 1rem;
+    position: absolute;
+    top:0;
+    right:0;
+    left:0;
+    bottom: 0;
+}
+.loading-box{
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%,-75%);
+    -moz-transform: translate(-50%,-75%);
+    -ms-transform: translate(-50%,-75%);
+    transform: translate(-50%,-75%);
+    padding: .5rem 1rem;
+    border-radius: 0.5em;
+    background-color: #ddd;
+    z-index: 999;
+}
+.loading-pic{
+    width: 5rem;
+    height: 5rem;
+}
+.loading-pic img{
+    width:100%;
+    height:100%;
+}
+.loading-text{
+    margin: 1.2em 0 0 0;
+    color: #3A5A98;
+    font-size: .8em;
+}

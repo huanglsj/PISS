@@ -45,12 +45,43 @@
 		appcan.button("#service", "ani-act", function() {
 			appcan.window.open("service", "service.html", 2);
 		});
-		
+
 		appcan.button("#guide", "ani-act", function() {
 			appcan.window.open("guide", "guide.html", 2);
 		});
 
+		appcan.button("#dynamic", "ani-act", function() {
+			appcan.locStorage.setVal("flightHeadClose", "true");
+			appcan.window.open("flight", "../flight/flight.html", 2);
+		});
 
+		appcan.button("#traveller", "ani-act", function() {
+			appcan.window.open("notice", "notice.html", 2);
+		});
+
+		appcan.button("#shopping", "ani-act", function() {
+			appcan.window.open("shopping", "shopping.html", 2);
+		});
+
+		appcan.button("#traffic", "ani-act", function() {
+			appcan.window.open("traffic", "traffic.html", 2);
+		});
+
+		appcan.button("#phone", "ani-act", function() {
+			appcan.window.open("phone", "phone.html", 2);
+		});
+
+		appcan.button("#opinion", "ani-act", function() {
+			appcan.window.open("opinion", "opinion.html", 2);
+		});
+		
+		appcan.button("#attention", "ani-act", function() {
+			appcan.window.open("attention", "attention.html", 2);
+		});
+		
+		appcan.button("#wifi", "ani-act", function() {
+			appcan.window.open("wifi", "wifi.html", 2);
+		});
 
 	});
 

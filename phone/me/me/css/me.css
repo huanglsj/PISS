@@ -1,0 +1,22 @@
+.me-head{
+	background-color: #196354;
+	color: #fff;
+	text-align: center;
+	padding: 2em 0;
+}
+.me-head img{
+	border-radius: 50%;
+}
+.me-head .btn{
+	background-color: #fff;
+	width: 5em;
+	color: #000;
+	padding: 0.3em;
+	border-radius: 0.2em;
+	margin: 0.5em auto 0;
+}
+.me-menu li{
+	padding: 1em;
+	border-bottom: 1px solid #ddd;
+	background-color: #fff;
+}
